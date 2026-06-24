@@ -30,10 +30,7 @@ class ViewController: UIViewController {
     private func updateCounter() {
         counterLabel.text = "Значение счетчика: \(count)"
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
+    
     
     @IBAction func buttonPressed(_ sender: UIButton) {
         count = 0
@@ -57,7 +54,10 @@ class ViewController: UIViewController {
         }
     }
     
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+    }
     
 
 
